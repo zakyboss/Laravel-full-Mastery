@@ -19,7 +19,7 @@
             </ul>
         </nav>
     </header>
-    <h1> Hello Zakyboss ! From laravel Baby !</h1> 
+    <?php echo $slot ?> 
 </body>
 
 </html>
