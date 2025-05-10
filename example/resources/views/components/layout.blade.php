@@ -19,7 +19,10 @@
             </ul>
         </nav>
     </header>
-    <?php echo $slot ?> 
+    {{$slot}}
+
+   
+
 </body>
 
 </html>
