@@ -1,3 +1,5 @@
 <x-layout> 
-<h1>Hello  Zakyboss  from about page </h1>
+   
+    <x-slot:heading> <h1>This is About heading</h1></x-slot:heading>
+
 </x-layout>
