@@ -45,9 +45,9 @@
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-<a href="/" class="{{ request()->is('/') ? 'bg-gray-900 text-white rounded-md' : 'text-gray-300 hover:bg-gray-700 rounded-md' }}">Home</a>
-<a href="/about" class="{{ request()->is('about') ? 'bg-gray-900 text-white rounded-md' : 'text-gray-300 hover:bg-gray-700 rounded-md' }}">About</a>
-<a href="/contacts" class="{{ request()->is('contacts') ? 'bg-gray-900 text-white rounded-md' : 'text-gray-300 hover:bg-gray-700 rounded-md' }}">Contact</a>
+<x-navLink href="/"  :active=" request()->is('/')" >Home</x-navLink>
+<x-navLink href="/jobs" :active="request()->is('jobs')" >Jobs</x-navLink>
+<x-navLink href="/contacts" :active="request()->is('contacts')">Contact</x-navLink>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
     {{$slot}}
 
    
-
+<x-footer></x-footer>
 </body>
 
 </html>
